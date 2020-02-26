@@ -6,7 +6,7 @@
         @foreach ($flights as $flight)
             <div class="card">
                 <div class="card-body">
-                   <h1>{{$flight->name}} </h1>
+                   <h1> <a href="/flights/{{$flight->id}}">{{$flight->name}} </a></h1>
                 </div>
             </div>
 

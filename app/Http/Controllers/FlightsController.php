@@ -48,7 +48,9 @@ class FlightsController extends Controller
      */
     public function show($id)
     {
-        //
+        $flight =Flight::find($id);
+
+        return view('flights.show')->with('flight',$flight);
     }
 
     /**
